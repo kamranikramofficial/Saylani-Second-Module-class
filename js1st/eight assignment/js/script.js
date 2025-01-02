@@ -53,3 +53,34 @@ console.log(pets)
 let pets1 =["dog", "cat", "bird"];
 pets1.unshift("fish", "gerbil");
 console.log(pets1)
+
+
+//array in splice method to add and remove ane one in index 
+//for example
+//varvablename.fuction(index, howmany, value1, value2, value3)
+//variname.splice(2,2,"index","add")
+//this remove last two element and add two element 
+let pets2 = ["dog", "cat", "bird" ,"remv"];
+pets2.splice(2, 2, "fish", "gerbil");
+console.log(pets2)
+
+//this only remove tha 1 ka bad ka element remove no add
+let pats4 =["dog","cat","bird"]
+pats4.splice(1)
+console.log(pats4)
+
+//this only remove tha onle index number go ap chatha ha remove  no add
+let pats5 =["dog","cat","bird"]
+pats5.splice(1,1)
+console.log(pats5)
+
+//splice practice
+let pets6 = ["dog", "cat", "bird"];
+pets6.splice(1, 2, "fish",);
+console.log(pets6)
+
+let pets7 = ["dog", "cat", "bird"];
+pets7.splice(1, 1, "fish","more add");
+console.log(pets7)
+
+
