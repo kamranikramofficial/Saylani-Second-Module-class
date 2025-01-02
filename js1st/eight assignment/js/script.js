@@ -50,6 +50,6 @@ pets.push("fish", "gerbil");
 console.log(pets)
 
 //aaray in unshift method add one or more element in array add this is same of push method but this is add first element
-let pets1 = ["dog", "cat", "bird"];
-pets1.unshift(["fish", "gerbil"])
+let pets1 =["dog", "cat", "bird"];
+pets1.unshift("fish", "gerbil");
 console.log(pets1)
