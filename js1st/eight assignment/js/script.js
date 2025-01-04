@@ -83,4 +83,8 @@ let pets7 = ["dog", "cat", "bird"];
 pets7.splice(1, 1, "fish","more add");
 console.log(pets7)
 
+//array in slice method to gererate tha new array in old array
+//varvablename.fuction(start, end)
+let pets8 = ["dog", "cat", "bird"];
+console.log(pets8.slice(1,3))
 
