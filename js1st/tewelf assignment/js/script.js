@@ -33,3 +33,52 @@ document.write("Original array: " + rray + "<br>");
 
 rray.unshift("kamran");
 document.write("Array after unshift: " + rray + "<br>");
+
+// Fifth question
+document.write("<br><br>Fifth Question <br>");
+let myfi = ["kamran", "arsalan", "hadeed", "javad", "danis"];
+document.write("Original array: " + myfi + "<br>");
+
+myfi.push("raza");
+document.write("Array after push: " + myfi + "<br>");
+
+// Sixth question
+document.write("<br><br>Sixth Question <br>");
+let mySixth = ["kamran", "arsalan", "hadeed", "javad", "danis", "raza"];
+document.write("Original array: " + mySixth + "<br>");
+
+let poppedElement = mySixth.pop();
+document.write("Array after pop: " + mySixth + "<br>");
+document.write("Removed element: " + poppedElement + "<br>");
+
+
+
+// Seventh question
+document.write("<br><br>Seventh Question <br>");
+let origise = ["kamran", "arsalan", "hadeed", "javad", "danis", "raza"];
+document.write("Original array: " + origise + "<br>");
+
+let newse = origise.slice(2, 5);
+document.write("New array after slice: " + newse + "<br>");
+document.write("Original array after slice: " + origise + "<br>");
+
+// Eighth question
+document.write("<br><br>Eighth Question <br>");
+let origieig = ["kamran", "arsalan", "hadeed", "javad", "danis", "raza"];
+document.write("Original array: " + origieig + "<br>");
+
+let eights = origieig.splice(2, 3);
+document.write("Array after splice: " + origieig + "<br>");
+document.write("Removed elements: " + eights + "<br>");
+
+
+
+// Ten question
+document.write("<br><br>Ten Question <br>");
+let origiten = ["kamran", "arsalan", "hadeed"];
+document.write("Original array: " + origiten + "<br>");
+
+origiten.push( "javad", "danis", "raza");
+document.write("Add element usenig push: " + origiten + "<br>");
+
+
