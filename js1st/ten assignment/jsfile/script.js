@@ -21,7 +21,7 @@
 let ar = ["kamran", "ikram", "ahmad", "ammar", "ahmar"];
 for(i=1; i<=ar.length; i++){
     if(ar[i-1] == "ahmad"){
-        document.write("Ahmad is in the array");
+        document.write("Ahmad is in the array </br>");
     }
     else if(ar[i-1] == "ammar"){
         document.write("ammar is in the array");
