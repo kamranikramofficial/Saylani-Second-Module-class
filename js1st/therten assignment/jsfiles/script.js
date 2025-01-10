@@ -40,25 +40,25 @@ console.log("Odd numbers:", odd1);
 
 // program for name of the student in database and show he is find 
 
-// let student = ["kamran","ikram","raza","ibrahim","jawad","hadeed","ammar","ahmad"];
-// find =prompt("enter your name")
-// for (var i=0; i <= student[i].length; i++){
-//     // console.log(student[i])
-//     if(student[i]==find){
-//       console.log("found")
-//       break
-//     }else{
-//         console.log("not found")
+let student = ["kamran","ikram","raza","ibrahim","jawad","hadeed","ammar","ahmad"];
+find =prompt("enter your name")
+for (var i=0; i <= student.length; i++){
+    // console.log(student[i])
+    if(student[i]==find){
+      console.log("found")
+      break
+    }else{
+        console.log("not found")
 
-//     }
-// }
+    }
+}
 
-// program for name of the student in database and show he is find 
+// program for name of the student in database and show he is find for search
 
 let student1 = ["kamran","ikram","raza","ibrahim","jawad"];
 find =prompt("enter your name")
 let valu=false;
-for (var i=0; i <= student1[i].length ; i++ ){
+for (var i=0; i <= student1.length ; i++ ){
     if(find==student1[i]){
       valu=true;
       break
@@ -69,6 +69,7 @@ if(valu){
 }else{
     console.log("Not found")
 }
+
 
 
 
