@@ -26,19 +26,26 @@ for (var smal=0; smal>small;smal++){
     document.write(smal)
 }
 
-
-
-
-
-let A = [24, 539, 78, 91, 192];
-
-// Initialize a variable to store the largest number
-let largestNumber = A[0];
-
-// Loop through the array to find the largest number
-for (let i = 1; i < A.length; i++) {
-    if (A[i] > largestNumber) {
-        largestNumber = A[i];
+//Four Question
+ 
+let a=[1,23,435,67,345,45];
+let larger= a[0];
+for(var l=0; l<a.length; l++ ){
+    if(a [l] >larger){
+        larger= a[l];
     }
 }
-document.write("The largest number in the array is: " + largestNumber);
+document.write("The largest number in the array is: " + larger +"<br>");
+
+//Fiffth Question
+ 
+let s=[1,23,435,67,345,45];
+let large= s[0];
+for(var l=0; l<s.length; l++ ){
+    if(s [l] <large){
+        large= s[l];
+    }
+}
+document.write("The smaller number in the array is: " + large);
+
+
