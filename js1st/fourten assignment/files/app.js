@@ -5,14 +5,13 @@ for(var i=1;i<=10;i++){
 
 }
 
-//Seconde Question
-// document.write("Seconde Question <br>")
-// inp=prompt("enter your number wtich table you see")
-// lent=prompt("enter your number wtich lenth of tha table")
-// //2 x 1 = 2
-// for(var t=1; t<=lent ; t++){
-//   document.write(`${inp} x ${t} = ${inp*t} <br>`)
-// }
+//document.write("Seconde Question <br>")
+inp=prompt("enter your number wtich table you see")
+lent=prompt("enter your number wtich lenth of tha table")
+//2 x 1 = 2
+for(var t=1; t<=lent ; t++){
+  document.write(`${inp} x ${t} = ${inp*t} <br>`)
+}
 
 //Theerd Question
 document.write("Therd Question <br>")
