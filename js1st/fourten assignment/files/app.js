@@ -5,7 +5,8 @@ for(var i=1;i<=10;i++){
 
 }
 
-//document.write("Seconde Question <br>")
+// Seconde Question
+document.write("Seconde Question <br>")
 inp=prompt("enter your number wtich table you see")
 lent=prompt("enter your number wtich lenth of tha table")
 //2 x 1 = 2
@@ -26,7 +27,7 @@ for (var smal=0; smal>small;smal++){
 }
 
 //Four Question
- 
+ document.write("Fourth Question <br>")
 let a=[1,23,435,67,345,45];
 let larger= a[0];
 for(var l=0; l<a.length; l++ ){
@@ -37,7 +38,7 @@ for(var l=0; l<a.length; l++ ){
 document.write("The largest number in the array is: " + larger +"<br>");
 
 //Fiffth Question
- 
+ document.write("fifth Question <br>")
 let s=[1,23,435,67,345,45];
 let large= s[0];
 for(var l=0; l<s.length; l++ ){
