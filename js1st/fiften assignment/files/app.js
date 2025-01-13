@@ -77,12 +77,12 @@ for(var f=1; f<=5; f++){
 //seven patern
 for (var r =1 ; r<5 ; r++){
     for(var c=1 ; c<5 ; c++){
-        if(r==5 || r==1 || c==3 || c==1){
+        if(r==5 || c==5 || r==1 || c==1){
            document.write("x")
         }else{
       document.write(" ")
         }
     }
-          document.write("<br>")
+     document.write("<br>")
 
 }
