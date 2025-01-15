@@ -1,30 +1,30 @@
-// let namn =["kamran" , "ikram","ahmad" ,"ammar"]
-// let plan=prompt("enter your pladelarem name");
-// let boo=false;
-// for (var i=0 ;i<= namn.length -1 ;i++){
-//      if(plan==namn[i]){
-//         boo=true;
-//         break; 
-//      }
-// }
+let namn =["kamran" , "ikram","ahmad" ,"ammar"]
+let plan=prompt("enter your pladelarem name");
+let boo=false;
+for (var i=0 ;i<= namn.length -1 ;i++){
+     if(plan==namn[i]){
+        boo=true;
+        break; 
+     }
+}
 
-// if(boo == true){
-//     console.log("found")
-// }else{
-//     console.log("Not found")
-// }
+if(boo == true){
+    console.log("found")
+}else{
+    console.log("Not found")
+}
 
-// let nam = ["kamran", "ikram", "ahmad", "ammar"];
+let nam = ["kamran", "ikram", "ahmad", "ammar"];
 
-// let longestName = "";
+let longestName = "";
 
-// for (let i = 0; i < nam.length; i++) {
-//     if (nam[i].length > longestName.length) {
-//         longestName = nam[i];
-//     }
-// }
+for (let i = 0; i < nam.length; i++) {
+    if (nam[i].length > longestName.length) {
+        longestName = nam[i];
+    }
+}
 
-// console.log("The longest name is: " + longestName);
+console.log("The longest name is: " + longestName);
 
 
 for(var i=1;i<=5;i++){
