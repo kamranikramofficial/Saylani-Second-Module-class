@@ -5,7 +5,6 @@
 // console.log(Math.PI);
 
 // methods we're gonna talk about
-// round() -> it rounds a number to the nearest integer.
 // ceil() -> it rounds a number UP to the nearest integer.
 // floor() -> it rounds a number DOWN to the nearest integer.
 
