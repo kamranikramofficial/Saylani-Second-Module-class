@@ -419,7 +419,9 @@ body {
 .about-detail a:hover {
     color: var(--primary-color);
 }
-
+.un{
+ text-decoration:none;
+}
 /* Responsive design for About section */
 @media (max-width: 768px) {
     .about-content {
