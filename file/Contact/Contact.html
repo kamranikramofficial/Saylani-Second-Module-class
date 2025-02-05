@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saylani Second Module Assignments</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script></head>
+<body>
+    <div class="theme-switch">
+        <input type="checkbox" id="theme-toggle">
+        <label for="theme-toggle" class="theme-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </label>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile" data-aos="fade-right">
+                <div class="profile-banner"></div>
+                <img src="../img/my.jpg" alt="Profile" class="profile-img">
+                <h2>Kamran Ikram</h2>
+                <p class="profile-bio">Web Developer | SMIT Student</p>
+                <div class="social-icons">
+                    <a href="https://github.com/kamranikramofficial" target="_blank" class="social-icon github">
+                        <i class="fab fa-github"></i>
+                        <span class="tooltip">GitHub</span>
+                    </a>
+                    <a href="#" target="_blank" class="social-icon linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="tooltip">LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-section" data-aos="fade-up">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="../../index.html" class="active"><i class="fas fa-tasks"></i>Assignments</a></li>
+                        <li><a href="/file/about/about.html"><i class="fas fa-user"></i>About</a></li>
+                        <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+    <main class="content">
+        <header class="content-header" data-aos="fade-down">
+            <h1>Saylani Second Module Assignments</h1>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search assignments..." id="searchInput">
+            </div>
+        </header>
+        
+        <section id="assignments" class="assignments-section">
+            <h2>Contact Detailes</h2>
+        </section>
+
+        <section id="about" class="about-section" data-aos="fade-up">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="../img/my.jpg" alt="Kamran Ikram" class="about-avatar">
+                </div>
+                <div class="about-info">
+                    <h3>Kamran Ikram</h3>
+                    <p class="about-bio">Web Developer | SMIT Student</p>
+                    <div class="about-details">
+                        <div class="about-detail">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:your.email@example.com">kamranikram706@example.com</a>
+                        </div>
+                        <div class="about-detail">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+923022901833">+92 302 2901833</a>
+                        </div>
+                        <div class="about-detail">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/kamranikramofficial" target="_blank">github.com/kamranikramofficial</a>
+                        </div>
+                        <div class="about-detail">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/kamranikramofficial/" target="_blank">linkedin.com/in/kamranikramofficial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Theme Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('change', () => {
+            document.body.classList.toggle('light-theme');
+        });
+
+        // Search Functionality
+        const searchInput = document.getElementById('searchInput');
+        const assignmentsGrid = document.getElementById('assignmentsGrid');
+        const cards = assignmentsGrid.getElementsByClassName('card');
+
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            Array.from(cards).forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+                const isVisible = title.includes(searchTerm) || description.includes(searchTerm);
+                card.style.display = isVisible ? 'block' : 'none';
+            });
+        });
+    </script>
+    </body>
+</html>
