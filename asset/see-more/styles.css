@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  #message-container {
+    position: relative;
+  }
+  
+  .message {
+    margin-bottom: 1rem;
+    transition: max-height 0.3s ease-out;
+    max-height:100%;
+    overflow: hidden;
+  }
+  
+  .message.expanded {
+    max-height: none;
+  }
+  
+  .read-more-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .read-more-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      margin: 1rem auto;
+    }
+  
+    .card {
+      padding: 1rem;
+    }
+  
+    .card-title {
+      font-size: 1.25rem;
+    }
+  
+    .message {
+      max-height: 150px;
+    }
+  }
+  
+  
