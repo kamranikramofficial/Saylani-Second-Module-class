@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMIT - Registered Users Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+        import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDP5X-Ly48292xhIYybNhdTVEvUG8-jTLg",
+            authDomain: "formfill-bbd98.firebaseapp.com",
+            projectId: "formfill-bbd98",
+            storageBucket: "formfill-bbd98.firebasestorage.app",
+            messagingSenderId: "275544598377",
+            appId: "1:275544598377:web:b027e65146a24f0ec13ff8",
+            measurementId: "G-58E218S28W"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        onAuthStateChanged(auth, (user) => {
+            if (!user) {
+                window.location.href = "../admin/index.html";
+            }
+        });
+
+        document.getElementById("logoutBtn").addEventListener("click", async () => {
+            try {
+                await signOut(auth);
+                window.location.href = "../admin/index.html";
+            } catch (error) {
+                alert("Logout failed. Try again.");
+                console.error(error);
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>SMIT Admin Dashboard</h1>
+            <p>Manage and view all registered students</p>
+            <button id="logoutBtn">
+                Logout
+            </button>
+        </div>
+
+        <!-- Users Grid -->
+        <div class="users-grid" id="usersGrid" style="display: none;">
+            <!-- User cards will be dynamically inserted here -->
+        </div>
+
+        <!-- No Users State -->
+        <div class="no-users" id="noUsersState" style="display: none;">
+            <div class="no-users-icon"></div>
+            <h3>No Users Found</h3>
+            <p>No registered users match your current search or filter criteria.</p>
+        </div>
+
+    </div>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>

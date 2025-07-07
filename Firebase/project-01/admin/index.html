@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMIT Admin Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <!-- Header -->
+        <div class="login-header">
+            <div class="login-icon">🔐</div>
+            <h1 class="login-title">Admin Login</h1>
+            <p class="login-subtitle">Access SMIT Dashboard</p>
+        </div>
+
+        <!-- Login Form -->
+        <form class="login-form" id="loginForm">
+            <!-- Error/Success Messages -->
+            <div class="error-message" id="errorMessage"></div>
+            <div class="success-message" id="successMessage"></div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input type="email" class="form-input" id="email" name="email" placeholder="Enter your email address"
+                    required autocomplete="email">
+                <span class="input-icon">📧</span>
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-group">
+                <label class="form-label" for="password">Password</label>
+                <input type="password" class="form-input" id="password" name="password"
+                    placeholder="Enter your password" required autocomplete="current-password">
+                <button type="button" class="password-toggle" id="passwordToggle">👁️</button>
+            </div>
+
+            <!-- Login Button -->
+            <button type="submit" class="login-button" id="loginButton">
+                <span class="loading-spinner" id="loadingSpinner"></span>
+                <span id="buttonText">Login to Dashboard</span>
+            </button>
+
+            <!-- Forgot Password -->
+            <div class="forgot-password">
+                <a href="#" id="forgotPasswordLink">Forgot your password?</a>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer-text">
+                © 2025 SMIT. Secure Admin Access
+            </div>
+        </form>
+    </div>
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
